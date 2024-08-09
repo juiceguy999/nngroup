@@ -1,6 +1,7 @@
 <script setup>
 import SubTabs from './SubTabs.vue'
 import { ref, onMounted } from 'vue'
+const apiUrl = import.meta.env.MODE === 'development' ? '/api' : `${import.meta.env.VITE_API_URL}`;
 
 
 const data = ref(null);
@@ -9,7 +10,7 @@ const currentTab = ref(null);
 const currentInnerTab = ref(null);
 
 onMounted(async () => {
-  const res = await fetch('/api/cases');
+  const res = await fetch(`${apiUrl}/cases`);
   const resData = await res.json();
   data.value = resData;
   
