@@ -2,25 +2,6 @@
 import SubTabs from './SubTabs.vue'
 import { ref, onMounted } from 'vue'
 
-// onMounted(async () => {
-//   const {data: casesData} = await axios.request({
-//     withCredentials: true,
-//     headers: {
-//       Authorization: `Bearer ${bearerToken}`
-//     },
-//     method: "GET",
-//     url: `/api/cases`
-//   });
-
-//   casesData.forEach(caseObj => {
-//     data.value.forEach(dataObj => {
-//       if(caseObj.type !== dataObj.type) return;
-//       dataObj.cases.push(caseObj);
-//     })
-//   });
-
-//   currentInnerTab.value = currentTab.value.cases[0];
-// })
 
 const data = ref(null);
 
