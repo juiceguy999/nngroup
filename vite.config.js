@@ -16,11 +16,11 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      "/foods": {
+      "/api": {
         target: "https://api.nngroup.xyz",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/foods/, "/foods"),
-        secure: false
+        rewrite: (path) => path.replace(/^\/api/, ''),
+        secure: true
       }
     }
   }
