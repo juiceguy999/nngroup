@@ -37,8 +37,6 @@ onMounted(async () => {
 })
 
 
-
-
 const handleTab = (tab) => {
   currentTab.value = tab;
   currentInnerTab.value = tab.cases[0];
