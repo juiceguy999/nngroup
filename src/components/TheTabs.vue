@@ -1,8 +1,10 @@
 <script setup>
-import SubTabs from './SubTabs.vue'
-import { ref, onMounted } from 'vue'
-const apiUrl = import.meta.env.MODE === 'development' ? '/api' : `${import.meta.env.VITE_API_URL}`;
+import SubTabs from './SubTabs.vue';
+import { ref, onMounted } from 'vue';
 
+// const apiUrl = import.meta.env.MODE === 'development' ? '/api' : `${import.meta.env.VITE_API_URL}`;
+
+const apiUrl = import.meta.env.VITE_API_URL;
 
 const data = ref(null);
 

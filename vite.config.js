@@ -20,7 +20,7 @@ export default defineConfig(({ command, mode }) => {
       port: 5173,
       proxy: {
         "/api": {
-          target: `${env.VITE_API_URL}`,
+          target: `https://api.nngroup.xyz`,
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ''),
           secure: true

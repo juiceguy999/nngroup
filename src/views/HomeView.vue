@@ -296,11 +296,7 @@ import TheTabs from '@/components/TheTabs.vue';
 </template>
 
 <style>
-.container {
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
+
 
 .hero {
   padding-bottom: 80px;
