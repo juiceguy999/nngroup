@@ -13,7 +13,11 @@ const fields = ref({
 async function register(payload) {
   const res = await fetch(`${apiUrl}/register`, {
     method: 'POST',
-    body: JSON.stringify(payload)
+    body: JSON.stringify(payload),
+    headers: {
+      'Content-type': 'application/json',
+      'Accept': 'application/json'
+    }
   });
 
   console.log(res);
